@@ -4,7 +4,7 @@
 
 Name:		quick-usb-formatter
 Version:	0.5
-Release:	0.%{beta}.1
+Release:	0.%{beta}.2
 Summary:	A small KDE4 application to format usb sticks and devices
 Group:		Graphical desktop/KDE
 License:	LGPLv2+
@@ -12,7 +12,7 @@ URL:		http://kde-apps.org/content/show.php?content=137493
 Source0:	http://sourceforge.net/projects/chakra/files/Tools/Quick-Usb-Formatter/quick-usb-formatter-%{version}-%{beta}.tar.bz2
 Patch0:		quick-usb-formatter-0.5-l10n-ru.patch
 BuildRequires:	cmake
-BuildRequires:	kdelibs4-devel
+BuildRequires:	kdelibs-devel
 BuildRequires:	gettext
 
 %description
@@ -41,4 +41,3 @@ device notifier, an additional option for quick format usb sticks.
 %{_datadir}/dbus-1/system-services/org.kde.auth.quf.service
 %{_datadir}/polkit-1/actions/org.kde.auth.quf.policy
 %{_sysconfdir}/dbus-1/system.d/org.kde.auth.quf.conf
-
