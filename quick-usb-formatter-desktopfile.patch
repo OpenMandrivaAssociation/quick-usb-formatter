@@ -1,0 +1,37 @@
+diff -up quick-usb-formatter-0.6/quickusbformatter.desktop.omv~ quick-usb-formatter-0.6/quickusbformatter.desktop
+--- quick-usb-formatter-0.6/quickusbformatter.desktop.omv~	2019-06-12 18:05:30.129023672 +0200
++++ quick-usb-formatter-0.6/quickusbformatter.desktop	2019-06-12 18:10:40.499026826 +0200
+@@ -2,12 +2,14 @@
+ Exec=/usr/bin/quickusbformatter
+ Icon=drive-removable-media-usb-pendrive
+ Type=Application
+-Name=USB Format
++Name=USB Storage Formatter
++Categories=Qt;Utility;X-KDE-More;
+ Name[sr]=Форматирај УСБ диск
+ Name[sr@ijekavian]=Форматирај УСБ диск
+ Name[sr@latin]=Formatiraj USB disk
+ Name[sr@ijekavianlatin]=Formatiraj USB disk
+ Name[ca]=Formata USB
++Name[de]=USB-Speicher Formatieren
+ Name[es]=Formatear USB
+ Name[fr]=Formater USB
+ Name[gl]=Formatar
+diff -up quick-usb-formatter-0.6/quickusbformatter_solid.desktop.omv~ quick-usb-formatter-0.6/quickusbformatter_solid.desktop
+--- quick-usb-formatter-0.6/quickusbformatter_solid.desktop.omv~	2019-06-12 18:10:45.774026880 +0200
++++ quick-usb-formatter-0.6/quickusbformatter_solid.desktop	2019-06-12 18:11:27.867027308 +0200
+@@ -1,12 +1,13 @@
+ [Desktop Action open]
+ Exec=/usr/bin/quickusbformatter udi %i
+ Icon=drive-removable-media-usb-pendrive
+-Name=USB Format
++Name=USB Storage Formatter
+ Name[sr]=Форматирај УСБ диск
+ Name[sr@ijekavian]=Форматирај УСБ диск
+ Name[sr@latin]=Formatiraj USB disk
+ Name[sr@ijekavianlatin]=Formatiraj USB disk
+ Name[ca]=Formata USB
++Name[de]=USB-Speicher formatieren
+ Name[es]=Formatear USB
+ Name[fr]=Formater USB
+ Name[gl]=Formatar

@@ -4,7 +4,7 @@
 
 Name:		quick-usb-formatter
 Version:	0.6
-Release:	0.%{beta}.1
+Release:	0.%{beta}.2
 Summary:	A small KF5 application to format usb sticks and devices
 Group:		Graphical desktop/KDE
 License:	LGPLv2+
@@ -12,6 +12,7 @@ URL:		https://gitorious.org/chakra/quick-usb-formatter
 # taken from altlinux: quick-usb-formatter-0.6-alt4.S1.src.rpm
 Source0:	quick-usb-formatter-%{version}-%{beta}.tar.xz
 Patch1:		alt-kf5.patch
+Patch2:		quick-usb-formatter-desktopfile.patch
 BuildRequires:	cmake
 BuildRequires:	cmake(ECM)
 BuildRequires:	gettext
