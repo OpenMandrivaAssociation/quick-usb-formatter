@@ -30,7 +30,7 @@ device notifier, an additional option for quick format usb sticks.
 
 %prep
 %setup -q -n quick-usb-formatter-%{version}
-%apply_patches
+%autopatch -p1
 
 %build
 %cmake_kde5
