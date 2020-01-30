@@ -56,4 +56,4 @@ device notifier, an additional option for quick format usb sticks.
 %{_kde5_libdir}/libexec/kauth/qufhelper
 %{_datadir}/dbus-1/system-services/org.kde.auth.quf.service
 %{_datadir}/polkit-1/actions/org.kde.auth.quf.policy
-%config(noreplace) %{_sysconfdir}/dbus-1/system.d/org.kde.auth.quf.conf
+%config(noreplace) %{_datadir}/dbus-1/system.d/org.kde.auth.quf.conf
