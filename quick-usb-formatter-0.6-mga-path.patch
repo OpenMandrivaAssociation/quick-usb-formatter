@@ -1,0 +1,65 @@
+--- quick-usb-formatter-0.6~/src/window.cpp	2015-11-18 13:55:13.000000000 +0300
++++ quick-usb-formatter-0.6/src/window.cpp	2015-11-18 13:56:38.551000000 +0300
+@@ -115,7 +115,7 @@ void Window::performAction(KAuth::Action
+         else 
+             args << "-f" << "-L"  << escapeLabel(label)  << "-v" << dirDev;
+          
+-        command = "mkfs.ntfs";
++        command = "/sbin/mkfs.ntfs";
+         
+     }
+     
+@@ -127,7 +127,7 @@ void Window::performAction(KAuth::Action
+         else 
+             args  << "-n"  << escapeLabel(label.mid(0, 16)) << dirDev;
+          
+-        command = "mkfs.exfat";
++        command = "/sbin/mkfs.exfat";
+         
+     }
+     
+@@ -139,7 +139,7 @@ void Window::performAction(KAuth::Action
+         else 
+             args  << "-l"  << escapeLabel(label) << dirDev;
+          
+-        command = "mkfs.f2fs";
++        command = "/usr/sbin/mkfs.f2fs";
+         
+     }
+     
+@@ -152,7 +152,7 @@ void Window::performAction(KAuth::Action
+         else
+             args << "-n" << escapeLabel((label).toUpper().mid(0, 11)) << "-v" << dirDev;
+ 
+-        command = "mkdosfs";
++        command = "/usr/sbin/mkdosfs";
+         
+     }
+ 
+@@ -164,7 +164,7 @@ void Window::performAction(KAuth::Action
+         else
+             args << "-t" << "ext4" << "-L"  << escapeLabel((label).mid(0, 16)) << "-v" << dirDev;
+ 
+-        command = "mke2fs";
++        command = "/sbin/mke2fs";
+ 
+     }else if(filesystem == QString("ext2")){
+ 
+@@ -175,7 +175,7 @@ void Window::performAction(KAuth::Action
+         else
+             args << "-t" << "ext2" << "-L"  << escapeLabel((label).mid(0, 16)) << "-v" << dirDev;
+             
+-        command = "mke2fs";
++        command = "/sbin/mke2fs";
+         
+     }else if(filesystem == QString("ext3")){
+ 
+@@ -186,7 +186,7 @@ void Window::performAction(KAuth::Action
+         else
+             args << "-t" << "ext3" << "-L"  << escapeLabel((label).mid(0, 16)) << "-v" << dirDev;
+ 
+-        command = "mke2fs";
++        command = "/sbin/mke2fs";
+         
+     }
+ 

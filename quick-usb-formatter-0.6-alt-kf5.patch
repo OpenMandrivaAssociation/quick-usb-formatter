@@ -44,7 +44,7 @@
 +  QString giga;
 +  StorageVolume *vol(device.as<StorageVolume>());
 +  if( vol )
-+    giga = QVariant(device.as<StorageVolume>()->size()).toString();
++    giga = QVariant(vol->size()).toString();
    float g = giga.toFloat();
    int gig = (int) (g / 1024) / 1024;
    
@@ -56,7 +56,7 @@
 +  QString fs_type;
 +  StorageVolume *vol(device.as<StorageVolume>());
 +  if( vol )
-+    fs_type = device.as<StorageVolume>()->fsType();
++    fs_type = vol->fsType();
 +  return fs_type;
  }
 --- a/src/window.cpp
