@@ -4,7 +4,7 @@
 
 Name:		quick-usb-formatter
 Version:	0.6
-Release:	0.%{beta}.2
+Release:	0.%{beta}.3
 Summary:	A small KF5 application to format usb sticks and devices
 Group:		Graphical desktop/KDE
 License:	LGPLv2+
